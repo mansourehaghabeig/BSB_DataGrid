@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" >
+    <h:head>
+        <title>BSB_eksmoon</title>
+        <h:outputScript library="js" name="sortable_us.js" /> 
+        <h:outputStylesheet library="css" name="table.css"  />
+        <h:outputStylesheet library="css" name="html-skin.css"  />
+        <h:outputStylesheet library="css" name="imgareaselect-default.css"  />
+        <h:outputStylesheet library="css" name="jquery-ui-1.10.4.custom.min.css"  />
+        <h:outputStylesheet library="css" name="jquery.autocomplete.css"  />
+        <h:outputStylesheet library="css" name="jquery.dict.css"  />
+        <h:outputStylesheet library="css" name="komunikator.css"  />
+        <h:outputStylesheet library="css" name="mail.css"  />
+        <h:outputStylesheet library="css" name="naglowek.css"  />
+        <h:outputStylesheet library="css" name="style.css"  />
+        <h:outputStylesheet library="css" name="thickbox.css"  />
+    </h:head>
+    <h:body>
+
+        <f:view>
+            <h:form>
+                <h:dataTable value="#{dataGridBean.dataList}" var="item"
+                             style="border-radius:10px;"
+                             styleClass="w980"
+                             headerClass="TR mul_a"
+                             class="sortable multiTable"
+                             id="t"
+                             footerClass="mul_c"
+                             rowClasses="mul_b"
+                             columnClasses="sel_kolumna_lp mul_right,mul_left,mul_left,mul_center,mul_left,mul_left,mul_left,mul_left"
+                             >
+                    <h:column headerClass="unsortable">
+                        <f:facet name='header'></f:facet>
+                            #{dataGridBean.dataList.rowIndex+1}
+                    </h:column   >
+                    <h:column>
+                        <f:facet name='header'>Numer sprawy</f:facet>
+                            #{item.numbrSprawy}
+                    </h:column>
+                    <h:column >
+                        <f:facet name='header' >Typ sprawy</f:facet>
+                            #{item.typSprawy}
+                    </h:column>
+                    <h:column>
+                        <f:facet name='header' >Date rozpoczęcia</f:facet>
+                            #{item.rozpoczcia}
+                    </h:column>
+                    <h:column>
+                        <f:facet name='header' >Zespol</f:facet>
+                            #{item.zespol}
+                    </h:column>
+                    <h:column>
+                        <f:facet name='header' >Nazwisko</f:facet>
+                            #{item.nazwisko}
+                    </h:column>
+                    <h:column>
+                        <f:facet name='header' >Imię</f:facet>
+                            #{item.imie}
+                    </h:column>
+                    <h:column>
+                        <f:facet name='header' >Miasto</f:facet>
+                            #{item.miasto}
+                    </h:column>
+                    <f:facet name="footer"></f:facet>
+                </h:dataTable>
+            </h:form>
+        </f:view>
+    </h:body>
+</html>
+
