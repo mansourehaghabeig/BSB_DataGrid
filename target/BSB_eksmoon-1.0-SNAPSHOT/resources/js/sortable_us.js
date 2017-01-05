@@ -50,7 +50,7 @@ function ts_makeSortable(t) {
 		var cell = firstRow.cells[i];
 		var txt = ts_getInnerText(cell);
 		if (cell.className != "unsortable" && cell.className.indexOf("unsortable") == -1) {
-			cell.innerHTML = '<a href="#" class="sortheader" onclick="ts_resortTable(this, '+i+');return false;">'+txt+'<span class="sortarrow">&nbsp;&nbsp;</span></a>';
+			cell.innerHTML = '<a href="#" style="color:white"    class="sortheader" onclick="ts_resortTable(this, '+i+');return false;">'+txt+'<span class="sortarrow">&nbsp;&nbsp;</span></a>';
 		}
 	}
 	if (alternate_row_colors) {

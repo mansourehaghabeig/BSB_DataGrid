@@ -23,8 +23,7 @@
         <f:view>
             <h:form>
                 <h:dataTable value="#{dataGridBean.dataList}" var="item"
-                             style="border-radius:10px;"
-                             styleClass="w980"
+                             style="border-radius: 10px; border: 1px solid #999;"
                              headerClass="TR mul_a"
                              class="sortable multiTable"
                              id="t"
@@ -32,7 +31,7 @@
                              rowClasses="mul_b"
                              columnClasses="sel_kolumna_lp mul_right,mul_left,mul_left,mul_center,mul_left,mul_left,mul_left,mul_left"
                              >
-                    <h:column headerClass="unsortable">
+                    <h:column headerClass="unsortable" >
                         <f:facet name='header'></f:facet>
                             #{dataGridBean.dataList.rowIndex+1}
                     </h:column   >
