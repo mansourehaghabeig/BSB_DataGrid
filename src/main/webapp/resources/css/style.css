@@ -984,10 +984,8 @@ TD.rap_pasek
 }
 /* Sortable tables */
 TABLE.sortable THEAD {
-    background-color:#eee;
-    color:#666666;
-    font-weight: bold;
-    cursor: default;
+    background-color: #6B7B88;
+ 
 }
 .THEAD2 {
     background-color: #6B7B88;
@@ -1005,6 +1003,7 @@ TABLE.sortable THEAD {
     padding-bottom: 0px;
     padding-left: 6px;
     vertical-align: middle;
+    
 }
 .THEAD2_A{
     background-color: #6B7B88;
@@ -1023,6 +1022,7 @@ TABLE.sortable THEAD {
     padding-left: 6px;
     vertical-align: middle;
     cursor: pointer;
+    
 }
 .TBODY2 {
     border-style:none;
@@ -1037,6 +1037,7 @@ TABLE.sortable THEAD {
     height: 26px;
     text-align: left;
     text-decoration: none ;
+    
 }
 .TFOOT2 {
     border-style:none;
@@ -1053,6 +1054,7 @@ TABLE.sortable THEAD {
     text-decoration: none;
     text-align: left;
     font-style: italic;
+    
 }
 .THEAD2_RIGHT {
     background: url('/COMMON/img/top3.png') no-repeat right top;

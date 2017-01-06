@@ -24,6 +24,7 @@ THEAD.multi{
     padding-bottom: 0px;
     padding-left: 6px;
     vertical-align: middle;
+    
 }
 
 TABLE.mul{
@@ -31,6 +32,7 @@ TABLE.mul{
     
 }
 TR.sortable{
+    
 }
 
 .TR.mul_a,THEAD.mul_a{
@@ -39,9 +41,27 @@ TR.sortable{
     color: #FFFFFF;
     text-decoration: none;
     height: 24px;
+   
 	
 }
 
+.TR.mul_af, THEAD.mul_af{
+   font-style: italic;
+    background-color: #6B7B88;
+    color: #FFFFFF;
+    text-decoration: none;
+    height: 24px;
+    border-top-left-radius: 0.7em; 
+}
+
+.TR.mul_af2, THEAD.mul_af2{
+   font-style: italic;
+    background-color: #6B7B88;
+    color: #FFFFFF;
+    text-decoration: none;
+    height: 24px;
+    border-top-right-radius: 0.7em; 
+}
 
 
 TH.mul_a1{
@@ -56,18 +76,20 @@ TH.mul_a3{
 }
 
 TR.mul_c,TFOOT.mul_c{
-    background-color:  #6B7B88;
-    height: 6px;
+      background-color: #0051BA;
+     height: 6px;
 }
 TD.mul_c1{
     background: url('/COMMON/img/mulc1.png') no-repeat left bottom;
     background-color: #6B7B88;
+     height: 6px;
 }
 TD.mul_c2{
 }
 TD.mul_c3{
     background: url('/COMMON/img/mulc3.png') no-repeat right bottom;
     background-color: #6B7B88;
+     height: 6px;
 }
 
 
@@ -116,10 +138,12 @@ TBODY.tbody2 {
     padding-bottom: 1px;
     padding-left: 4px;
     vertical-align: central;
+   
+    
 }
 
 TD.mul_left{
-    border-bottom-width: 1px;
+ border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color:#6B7B88;
     text-align: left;
@@ -128,10 +152,12 @@ TD.mul_left{
     padding-bottom: 1px;
     padding-left: 3px;
     vertical-align: central;
+
 }
 TD.mul_right{
+  
     border-bottom-width: 1px;
-    border-bottom-style: solid;
+     border-bottom-style: solid;
     border-bottom-color:#6B7B88;    
     text-align: right;
     padding-top: 1px;
@@ -139,8 +165,10 @@ TD.mul_right{
     padding-bottom: 1px;
     padding-left: 1px;
     vertical-align: central;
+
 }
 TD.mul_center{
+   
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color:#6B7B88;
@@ -150,4 +178,5 @@ TD.mul_center{
     padding-bottom: 1px;
     padding-left: 2px;
     vertical-align: central;
+
 }
